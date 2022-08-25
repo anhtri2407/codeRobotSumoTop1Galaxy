@@ -55,10 +55,10 @@ void backward()
   
 void right()
 {
-            digitalWrite(IN1, LOW);
-            digitalWrite(IN2, HIGH);
-            digitalWrite(IN3, HIGH);
-            digitalWrite(IN4, LOW);
+            digitalWrite(IN1, HIGH);
+            digitalWrite(IN2, LOW);
+            digitalWrite(IN3, LOW);
+            digitalWrite(IN4, HIGH);
              
                 analogWrite(enA, LeftRotationSpeed);
                 analogWrite(enB, RightRotationSpeed);
@@ -66,10 +66,12 @@ void right()
   
 void left()
 {
-            digitalWrite(IN1, HIGH);
-            digitalWrite(IN2, LOW);
-            digitalWrite(IN3, LOW);
-            digitalWrite(IN4, HIGH);
+            
+
+            digitalWrite(IN1, LOW);
+            digitalWrite(IN2, HIGH);
+            digitalWrite(IN3, HIGH);
+            digitalWrite(IN4, LOW);
              
                 analogWrite(enA, LeftRotationSpeed);
                 analogWrite(enB, RightRotationSpeed);
